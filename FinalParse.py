@@ -132,20 +132,20 @@ print("Renos",count)
 print("CeeInject",count2)
 
 
-FinalOutput =[]
-
-print()
-print("Cheet Label output")
-print(FinalLabels)
-
-correct=0
-for out, final in zip(output, FinalLabels):
-    if(out==final):
-        correct+=1
-print()
-print("Correct values checked against Date")
-print(correct)
-print()
+# FinalOutput =[]
+#
+# print()
+# print("Cheet Label output")
+# print(FinalLabels)
+#
+# correct=0
+# for out, final in zip(output, FinalLabels):
+#     if(out==final):
+#         correct+=1
+# print()
+# print("Correct values checked against Date")
+# print(correct)
+# print()
 
 
 

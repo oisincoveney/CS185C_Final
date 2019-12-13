@@ -1,7 +1,7 @@
 import argparse
 import ast
 import os
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.decomposition import PCA
 import numpy as np
 
@@ -10,7 +10,7 @@ import check
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--n", "-n", help="Number of components for PCA", type=int, default=-1)
-parser.add_argument("--k", "-k", help="k value for k-NN", type=int, default=4)
+parser.add_argument("--trees", "-t", help="Number of trees in the forest", type=int, default=100)
 parser.add_argument("--challenge", "-c", help="Add challenge labels", action="store_true")
 args = parser.parse_args()
 
@@ -39,7 +39,7 @@ if args.n >= 0:
     challenge_vectors = pca.transform(challenge_vectors)
 
 labels = np.concatenate(([0] * len(cee_inject_train), [1] * len(renos_train)))
-neighbors = KNeighborsClassifier(n_neighbors=args.k).fit(labelled_train, labels)
+neighbors = RandomForestClassifier(n_estimators=args.trees).fit(labelled_train, labels)
 print("Cee Inject:", check.accuracy(neighbors.predict(cee_inject_test), [0] * len(cee_inject_test)))
 print("Renos:", check.accuracy(neighbors.predict(renos_test), [1] * len(renos_test)))
 
