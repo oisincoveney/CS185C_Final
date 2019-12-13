@@ -1,0 +1,444 @@
+Renos
+Opcode Pairings:
+mov: [0.06312111 0.17917962]
+push: [0.21768643 0.08744173]
+pop: [ 0.22655743 -0.24188209]
+xor: [ 0.10973657 -0.04382543]
+dec: [-0.24752456  0.10834847]
+add: [0.05210659 0.05912912]
+inc: [-0.04728206  0.07419543]
+xchg: [ 0.2421811  -0.10247789]
+adc: [ 0.06226001 -0.08031397]
+cmp: [ 0.02895364 -0.06111296]
+or: [-0.15251532  0.00245308]
+sbb: [-0.10454116  0.04084959]
+insl: [0.18334506 0.10369293]
+out: [-0.01953757  0.10372447]
+outsl: [0.05269632 0.06270138]
+sub: [-0.14891261 -0.11810645]
+imul: [-0.19867639 -0.09160066]
+and: [0.09070268 0.15262684]
+jo: [-0.24256864  0.12681031]
+js: [-0.17860307  0.1786082 ]
+
+
+
+
+
+Similarity Scores
+
+ push <> push  :  1.0000
+ push <> mov   :  0.6599
+ push <> inc   : -0.1843
+ push <> dec   : -0.7006
+ push <> pop   :  0.3623
+ push <> add   :  0.8932
+ push <> xor   :  0.7235
+ push <> xchg  :  0.7093
+ push <> or    : -0.9218
+ push <> adc   :  0.2739
+ push <> sub   : -0.9587
+ push <> and   :  0.7945
+ push <> sbb   : -0.7286
+ push <> cmp   :  0.0604
+ push <> imul  : -0.9987
+ push <> out   :  0.1945
+ push <> outsl :  0.8824
+ push <> jo    : -0.6497
+ push <> js    : -0.3926
+ push <> insl  :  0.9912
+  mov <> push  :  0.6599
+  mov <> mov   :  1.0000
+  mov <> inc   :  0.6168
+  mov <> dec   :  0.0738
+  mov <> pop   : -0.4612
+  mov <> add   :  0.9273
+  mov <> xor   : -0.0412
+  mov <> xchg  : -0.0616
+  mov <> or    : -0.3171
+  mov <> adc   : -0.5419
+  mov <> sub   : -0.8464
+  mov <> and   :  0.9806
+  mov <> sbb   :  0.0338
+  mov <> cmp   : -0.7101
+  mov <> imul  : -0.6966
+  mov <> out   :  0.8654
+  mov <> outsl :  0.9358
+  mov <> jo    :  0.1425
+  mov <> js    :  0.4320
+  mov <> insl  :  0.7535
+  inc <> push  : -0.1843
+  inc <> mov   :  0.6168
+  inc <> inc   :  1.0000
+  inc <> dec   :  0.8305
+  inc <> pop   : -0.9829
+  inc <> add   :  0.2774
+  inc <> xor   : -0.8119
+  inc <> xchg  : -0.8236
+  inc <> or    :  0.5509
+  inc <> adc   : -0.9958
+  inc <> sub   : -0.1030
+  inc <> and   :  0.4504
+  inc <> sbb   :  0.8075
+  inc <> cmp   : -0.9922
+  inc <> imul  :  0.1349
+  inc <> out   :  0.9282
+  inc <> outsl :  0.2998
+  inc <> jo    :  0.8670
+  inc <> js    :  0.9763
+  inc <> insl  : -0.0526
+  dec <> push  : -0.7006
+  dec <> mov   :  0.0738
+  dec <> inc   :  0.8305
+  dec <> dec   :  1.0000
+  dec <> pop   : -0.9189
+  dec <> add   : -0.3048
+  dec <> xor   : -0.9995
+  dec <> xchg  : -0.9999
+  dec <> or    :  0.9224
+  dec <> adc   : -0.8782
+  dec <> sub   :  0.4686
+  dec <> and   : -0.1233
+  dec <> sbb   :  0.9992
+  dec <> cmp   : -0.7546
+  dec <> imul  :  0.6640
+  dec <> out   :  0.5636
+  dec <> outsl : -0.2824
+  dec <> jo    :  0.9976
+  dec <> js    :  0.9313
+  dec <> insl  : -0.6000
+  pop <> push  :  0.3623
+  pop <> mov   : -0.4612
+  pop <> inc   : -0.9829
+  pop <> dec   : -0.9189
+  pop <> pop   :  1.0000
+  pop <> add   : -0.0956
+  pop <> xor   :  0.9055
+  pop <> xchg  :  0.9140
+  pop <> or    : -0.6953
+  pop <> adc   :  0.9957
+  pop <> sub   : -0.0821
+  pop <> and   : -0.2782
+  pop <> sbb   : -0.9024
+  pop <> cmp   :  0.9523
+  pop <> imul  : -0.3152
+  pop <> out   : -0.8438
+  pop <> outsl : -0.1189
+  pop <> jo    : -0.9440
+  pop <> js    : -0.9995
+  pop <> insl  :  0.2357
+  add <> push  :  0.8932
+  add <> mov   :  0.9273
+  add <> inc   :  0.2774
+  add <> dec   : -0.3048
+  add <> pop   : -0.0956
+  add <> add   :  1.0000
+  add <> xor   :  0.3357
+  add <> xchg  :  0.3165
+  add <> or    : -0.6490
+  add <> adc   : -0.1879
+  add <> sub   : -0.9842
+  add <> and   :  0.9827
+  add <> sbb   : -0.3427
+  add <> cmp   : -0.3949
+  add <> imul  : -0.9145
+  add <> out   :  0.6149
+  add <> outsl :  0.9997
+  add <> jo    : -0.2383
+  add <> js    :  0.0630
+  add <> insl  :  0.9448
+  xor <> push  :  0.7235
+  xor <> mov   : -0.0412
+  xor <> inc   : -0.8119
+  xor <> dec   : -0.9995
+  xor <> pop   :  0.9055
+  xor <> add   :  0.3357
+  xor <> xor   :  1.0000
+  xor <> xchg  :  0.9998
+  xor <> or    : -0.9345
+  xor <> adc   :  0.8621
+  xor <> sub   : -0.4971
+  xor <> and   :  0.1556
+  xor <> sbb   : -1.0000
+  xor <> cmp   :  0.7328
+  xor <> imul  : -0.6881
+  xor <> out   : -0.5364
+  xor <> outsl :  0.3136
+  xor <> jo    : -0.9948
+  xor <> js    : -0.9189
+  xor <> insl  :  0.6258
+ xchg <> push  :  0.7093
+ xchg <> mov   : -0.0616
+ xchg <> inc   : -0.8236
+ xchg <> dec   : -0.9999
+ xchg <> pop   :  0.9140
+ xchg <> add   :  0.3165
+ xchg <> xor   :  0.9998
+ xchg <> xchg  :  1.0000
+ xchg <> or    : -0.9271
+ xchg <> adc   :  0.8722
+ xchg <> sub   : -0.4794
+ xchg <> and   :  0.1355
+ xchg <> sbb   : -0.9996
+ xchg <> cmp   :  0.7465
+ xchg <> imul  : -0.6732
+ xchg <> out   : -0.5534
+ xchg <> outsl :  0.2942
+ xchg <> jo    : -0.9967
+ xchg <> js    : -0.9268
+ xchg <> insl  :  0.6098
+   or <> push  : -0.9218
+   or <> mov   : -0.3171
+   or <> inc   :  0.5509
+   or <> dec   :  0.9224
+   or <> pop   : -0.6953
+   or <> add   : -0.6490
+   or <> xor   : -0.9345
+   or <> xchg  : -0.9271
+   or <> or    :  1.0000
+   or <> adc   : -0.6253
+   or <> sub   :  0.7734
+   or <> and   : -0.4970
+   or <> sbb   :  0.9372
+   or <> cmp   : -0.4426
+   or <> imul  :  0.9013
+   or <> out   :  0.2009
+   or <> outsl : -0.6310
+   or <> jo    :  0.8935
+   or <> js    :  0.7184
+   or <> insl  : -0.8624
+  adc <> push  :  0.2739
+  adc <> mov   : -0.5419
+  adc <> inc   : -0.9958
+  adc <> dec   : -0.8782
+  adc <> pop   :  0.9957
+  adc <> add   : -0.1879
+  adc <> xor   :  0.8621
+  adc <> xchg  :  0.8722
+  adc <> or    : -0.6253
+  adc <> adc   :  1.0000
+  adc <> sub   :  0.0111
+  adc <> and   : -0.3664
+  adc <> sbb   : -0.8583
+  adc <> cmp   :  0.9765
+  adc <> imul  : -0.2255
+  adc <> out   : -0.8901
+  adc <> outsl : -0.2108
+  adc <> jo    : -0.9091
+  adc <> js    : -0.9921
+  adc <> insl  :  0.1442
+  sub <> push  : -0.9587
+  sub <> mov   : -0.8464
+  sub <> inc   : -0.1030
+  sub <> dec   :  0.4686
+  sub <> pop   : -0.0821
+  sub <> add   : -0.9842
+  sub <> xor   : -0.4971
+  sub <> xchg  : -0.4794
+  sub <> or    :  0.7734
+  sub <> adc   :  0.0111
+  sub <> sub   :  1.0000
+  sub <> and   : -0.9345
+  sub <> sbb   :  0.5036
+  sub <> cmp   :  0.2261
+  sub <> imul  :  0.9717
+  sub <> out   : -0.4656
+  sub <> outsl : -0.9798
+  sub <> jo    :  0.4064
+  sub <> js    :  0.1146
+  sub <> insl  : -0.9879
+  and <> push  :  0.7945
+  and <> mov   :  0.9806
+  and <> inc   :  0.4504
+  and <> dec   : -0.1233
+  and <> pop   : -0.2782
+  and <> add   :  0.9827
+  and <> xor   :  0.1556
+  and <> xchg  :  0.1355
+  and <> or    : -0.4970
+  and <> adc   : -0.3664
+  and <> sub   : -0.9345
+  and <> and   :  1.0000
+  and <> sbb   : -0.1630
+  and <> cmp   : -0.5581
+  and <> imul  : -0.8239
+  and <> out   :  0.7502
+  and <> outsl :  0.9868
+  and <> jo    : -0.0545
+  and <> js    :  0.2466
+  and <> insl  :  0.8679
+  sbb <> push  : -0.7286
+  sbb <> mov   :  0.0338
+  sbb <> inc   :  0.8075
+  sbb <> dec   :  0.9992
+  sbb <> pop   : -0.9024
+  sbb <> add   : -0.3427
+  sbb <> xor   : -1.0000
+  sbb <> xchg  : -0.9996
+  sbb <> or    :  0.9372
+  sbb <> adc   : -0.8583
+  sbb <> sub   :  0.5036
+  sbb <> and   : -0.1630
+  sbb <> sbb   :  1.0000
+  sbb <> cmp   : -0.7277
+  sbb <> imul  :  0.6935
+  sbb <> out   :  0.5301
+  sbb <> outsl : -0.3206
+  sbb <> jo    :  0.9940
+  sbb <> js    :  0.9160
+  sbb <> insl  : -0.6316
+  cmp <> push  :  0.0604
+  cmp <> mov   : -0.7101
+  cmp <> inc   : -0.9922
+  cmp <> dec   : -0.7546
+  cmp <> pop   :  0.9523
+  cmp <> add   : -0.3949
+  cmp <> xor   :  0.7328
+  cmp <> xchg  :  0.7465
+  cmp <> or    : -0.4426
+  cmp <> adc   :  0.9765
+  cmp <> sub   :  0.2261
+  cmp <> and   : -0.5581
+  cmp <> sbb   : -0.7277
+  cmp <> cmp   :  1.0000
+  cmp <> imul  : -0.0104
+  cmp <> out   : -0.9673
+  cmp <> outsl : -0.4164
+  cmp <> jo    : -0.7981
+  cmp <> js    : -0.9418
+  cmp <> insl  : -0.0722
+ imul <> push  : -0.9987
+ imul <> mov   : -0.6966
+ imul <> inc   :  0.1349
+ imul <> dec   :  0.6640
+ imul <> pop   : -0.3152
+ imul <> add   : -0.9145
+ imul <> xor   : -0.6881
+ imul <> xchg  : -0.6732
+ imul <> or    :  0.9013
+ imul <> adc   : -0.2255
+ imul <> sub   :  0.9717
+ imul <> and   : -0.8239
+ imul <> sbb   :  0.6935
+ imul <> cmp   : -0.0104
+ imul <> imul  :  1.0000
+ imul <> out   : -0.2434
+ imul <> outsl : -0.9048
+ imul <> jo    :  0.6108
+ imul <> js    :  0.3461
+ imul <> insl  : -0.9966
+  out <> push  :  0.1945
+  out <> mov   :  0.8654
+  out <> inc   :  0.9282
+  out <> dec   :  0.5636
+  out <> pop   : -0.8438
+  out <> add   :  0.6149
+  out <> xor   : -0.5364
+  out <> xchg  : -0.5534
+  out <> or    :  0.2009
+  out <> adc   : -0.8901
+  out <> sub   : -0.4656
+  out <> and   :  0.7502
+  out <> sbb   :  0.5301
+  out <> cmp   : -0.9673
+  out <> imul  : -0.2434
+  out <> out   :  1.0000
+  out <> outsl :  0.6332
+  out <> jo    :  0.6193
+  out <> js    :  0.8258
+  out <> insl  :  0.3227
+outsl <> push  :  0.8824
+outsl <> mov   :  0.9358
+outsl <> inc   :  0.2998
+outsl <> dec   : -0.2824
+outsl <> pop   : -0.1189
+outsl <> add   :  0.9997
+outsl <> xor   :  0.3136
+outsl <> xchg  :  0.2942
+outsl <> or    : -0.6310
+outsl <> adc   : -0.2108
+outsl <> sub   : -0.9798
+outsl <> and   :  0.9868
+outsl <> sbb   : -0.3206
+outsl <> cmp   : -0.4164
+outsl <> imul  : -0.9048
+outsl <> out   :  0.6332
+outsl <> outsl :  1.0000
+outsl <> jo    : -0.2155
+outsl <> js    :  0.0864
+outsl <> insl  :  0.9369
+   jo <> push  : -0.6497
+   jo <> mov   :  0.1425
+   jo <> inc   :  0.8670
+   jo <> dec   :  0.9976
+   jo <> pop   : -0.9440
+   jo <> add   : -0.2383
+   jo <> xor   : -0.9948
+   jo <> xchg  : -0.9967
+   jo <> or    :  0.8935
+   jo <> adc   : -0.9091
+   jo <> sub   :  0.4064
+   jo <> and   : -0.0545
+   jo <> sbb   :  0.9940
+   jo <> cmp   : -0.7981
+   jo <> imul  :  0.6108
+   jo <> out   :  0.6193
+   jo <> outsl : -0.2155
+   jo <> jo    :  1.0000
+   jo <> js    :  0.9542
+   jo <> insl  : -0.5433
+   js <> push  : -0.3926
+   js <> mov   :  0.4320
+   js <> inc   :  0.9763
+   js <> dec   :  0.9313
+   js <> pop   : -0.9995
+   js <> add   :  0.0630
+   js <> xor   : -0.9189
+   js <> xchg  : -0.9268
+   js <> or    :  0.7184
+   js <> adc   : -0.9921
+   js <> sub   :  0.1146
+   js <> and   :  0.2466
+   js <> sbb   :  0.9160
+   js <> cmp   : -0.9418
+   js <> imul  :  0.3461
+   js <> out   :  0.8258
+   js <> outsl :  0.0864
+   js <> jo    :  0.9542
+   js <> js    :  1.0000
+   js <> insl  : -0.2674
+ insl <> push  :  0.9912
+ insl <> mov   :  0.7535
+ insl <> inc   : -0.0526
+ insl <> dec   : -0.6000
+ insl <> pop   :  0.2357
+ insl <> add   :  0.9448
+ insl <> xor   :  0.6258
+ insl <> xchg  :  0.6098
+ insl <> or    : -0.8624
+ insl <> adc   :  0.1442
+ insl <> sub   : -0.9879
+ insl <> and   :  0.8679
+ insl <> sbb   : -0.6316
+ insl <> cmp   : -0.0722
+ insl <> imul  : -0.9966
+ insl <> out   :  0.3227
+ insl <> outsl :  0.9369
+ insl <> jo    : -0.5433
+ insl <> js    : -0.2674
+ insl <> insl  :  1.0000
+
+
+
+
+
+Pairings:
+
+{'push', 'add', 'outsl', 'mov', 'and', 'insl'}
+{'imul', 'or', 'js', 'dec', 'sbb', 'out', 'sub', 'inc', 'jo'}
+{'cmp', 'adc', 'xor', 'pop', 'xchg'}
+
+
+
+
+
